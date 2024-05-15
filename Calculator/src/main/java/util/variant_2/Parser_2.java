@@ -13,7 +13,7 @@ public class Parser_2 {
             // он у числа а не у выражения
             if (currentChar == '-' && prevChar != '(') {
                 expression = expression.substring(5, index) +
-                        "~" +
+                        "-" +
                         expression.substring(index + 1);
             } else {
                 // переходим на следующий знак
